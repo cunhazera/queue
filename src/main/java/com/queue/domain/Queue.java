@@ -1,5 +1,7 @@
 package com.queue.domain;
 
+import java.util.Collection;
+
 public interface Queue<E> {
 
     void enqueue(E e);
@@ -11,5 +13,7 @@ public interface Queue<E> {
     boolean isEmpty();
 
     int getSize();
+
+    Collection<E> values();
 
 }

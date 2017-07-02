@@ -31,4 +31,9 @@ public class LinkedQueue<E> implements Queue<E> {
         return list.size();
     }
 
+    @Override
+    public LinkedList<E> values() {
+        return list;
+    }
+
 }
